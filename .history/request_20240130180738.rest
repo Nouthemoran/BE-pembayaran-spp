@@ -1,0 +1,102 @@
+### Spp Restful-Api
+GET http://localhost:5000/Spp
+
+###
+GET http://localhost:5000/Spp/1
+
+###
+POST http://localhost:5000/Spp
+Content-Type: application/json
+
+{
+    "tahun": "2023",
+    "nominal": "330000"
+}
+
+###
+PATCH http://localhost:5000/Spp/2
+Content-Type: application/json
+
+{
+    "tahun": "2023",
+    "nominal": "290000"
+}
+
+###
+DELETE http://localhost:5000/Spp/2
+
+
+
+### Kelas Restful-Api
+GET http://localhost:5000/siswa
+
+###
+GET http://localhost:5000/siswa/1234567890
+
+###
+POST http://localhost:5000/siswa
+Content-Type: application/json
+
+{
+    "nisn": "1234567891",
+    "nis": "12345677",
+    "nama": "adi",
+    "id_kelas": "1",
+    "alamat": "jl. sangkuriang",
+    "no_telp": "087765451010",
+    "id_spp": "1"
+}
+
+###
+PATCH http://localhost:5000/siswa/1234567891
+Content-Type: application/json
+
+{
+    "nisn": "1234567891",
+    "nis": "12345673",
+    "nama": "udin",
+    "id_kelas": "2",
+    "alamat": "jl. kopi",
+    "no_telp": "084355672830",
+    "id_spp": "1"
+}
+###
+DELETE http://localhost:5000/siswa/1234567891
+
+
+
+### Siswa Restful-Api
+GET http://localhost:5000/kelas
+
+###
+GET http://localhost:5000/kelas/1
+
+###
+POST http://localhost:5000/kelas
+Content-Type: application/json
+
+{
+    "id_kelas": "1",
+    "": "12345677",
+    "nama": "adi",
+    "id_kelas": "1",
+    "alamat": "jl. sangkuriang",
+    "no_telp": "087765451010",
+    "id_spp": "1"
+}
+
+###
+PATCH http://localhost:5000/kelas/1
+Content-Type: application/json
+
+{
+    "nisn": "1234567891",
+    "nis": "12345673",
+    "nama": "udin",
+    "id_kelas": "2",
+    "alamat": "jl. kopi",
+    "no_telp": "084355672830",
+    "id_spp": "1"
+}
+###
+DELETE http://localhost:5000/siswa/1

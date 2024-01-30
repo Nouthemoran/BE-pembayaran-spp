@@ -1,0 +1,60 @@
+### Spp Restful-Api
+GET http://localhost:5000/Spp
+
+###
+GET http://localhost:5000/Spp/1
+
+###
+POST http://localhost:5000/Spp
+Content-Type: application/json
+
+{
+    "tahun": "2023",
+    "nominal": "330000"
+}
+
+###
+PATCH http://localhost:5000/Spp/2
+Content-Type: application/json
+
+{
+    "tahun": "2023",
+    "nominal": "290000"
+}
+
+###
+DELETE http://localhost:5000/Spp/2
+
+
+
+### Siswa Restful-Api
+GET http://localhost:5000/siswa
+
+###
+GET http://localhost:5000/siswa/1
+
+###
+POST http://localhost:5000/siswa
+Content-Type: application/json
+
+{
+    "nisn": "1234567890",
+    "nis": "12345677",
+    "nama": "adi",
+    "id_kelas": "1",
+    "alamat": "jl. sangkuriang",
+    "no_telp": "087765451010",
+    "id_spp": "1"
+}
+
+###
+PATCH http://localhost:5000/siswa/2
+Content-Type: application/json
+
+{
+    "tahun": "2023",
+    "nominal": "290000"
+}
+
+###
+DELETE http://localhost:5000/siswa/2
